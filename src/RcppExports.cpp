@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // zstdCompressImpl
 SEXP zstdCompressImpl(Rcpp::RObject data, int level);
-RcppExport SEXP zstdr_zstdCompressImpl(SEXP dataSEXP, SEXP levelSEXP) {
+RcppExport SEXP _zstdr_zstdCompressImpl(SEXP dataSEXP, SEXP levelSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,7 +19,7 @@ END_RCPP
 }
 // zstdDecompressImpl
 SEXP zstdDecompressImpl(Rcpp::RObject data);
-RcppExport SEXP zstdr_zstdDecompressImpl(SEXP dataSEXP) {
+RcppExport SEXP _zstdr_zstdDecompressImpl(SEXP dataSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -30,7 +30,7 @@ END_RCPP
 }
 // zstdMaxCLevelImpl
 SEXP zstdMaxCLevelImpl();
-RcppExport SEXP zstdr_zstdMaxCLevelImpl() {
+RcppExport SEXP _zstdr_zstdMaxCLevelImpl() {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -40,9 +40,9 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"zstdr_zstdCompressImpl", (DL_FUNC) &zstdr_zstdCompressImpl, 2},
-    {"zstdr_zstdDecompressImpl", (DL_FUNC) &zstdr_zstdDecompressImpl, 1},
-    {"zstdr_zstdMaxCLevelImpl", (DL_FUNC) &zstdr_zstdMaxCLevelImpl, 0},
+    {"_zstdr_zstdCompressImpl", (DL_FUNC) &_zstdr_zstdCompressImpl, 2},
+    {"_zstdr_zstdDecompressImpl", (DL_FUNC) &_zstdr_zstdDecompressImpl, 1},
+    {"_zstdr_zstdMaxCLevelImpl", (DL_FUNC) &_zstdr_zstdMaxCLevelImpl, 0},
     {NULL, NULL, 0}
 };
 

@@ -15,10 +15,9 @@ URL: https://github.com/thekvs/zstdr
 BugReports: https://github.com/thekvs/zstdr/issues
 License: GPL (>= 2)
 LazyData: TRUE
-SystemRequirements: C++11, cmake (>= 2.8.9)
+SystemRequirements: zstd
 Imports:
     Rcpp (>= 0.12.0)
 LinkingTo: Rcpp
 RoxygenNote: 6.0.1
 Suggests: testthat
-OS_type: unix

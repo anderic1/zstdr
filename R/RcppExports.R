@@ -2,14 +2,14 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 zstdCompressImpl <- function(data, level) {
-    .Call('zstdr_zstdCompressImpl', PACKAGE = 'zstdr', data, level)
+    .Call('_zstdr_zstdCompressImpl', PACKAGE = 'zstdr', data, level)
 }
 
 zstdDecompressImpl <- function(data) {
-    .Call('zstdr_zstdDecompressImpl', PACKAGE = 'zstdr', data)
+    .Call('_zstdr_zstdDecompressImpl', PACKAGE = 'zstdr', data)
 }
 
 zstdMaxCLevelImpl <- function() {
-    .Call('zstdr_zstdMaxCLevelImpl', PACKAGE = 'zstdr')
+    .Call('_zstdr_zstdMaxCLevelImpl', PACKAGE = 'zstdr')
 }
 
